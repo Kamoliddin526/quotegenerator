@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: url(./library.jpg) no-repeat center/ cover;
+    background-position: 20% 10%;
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    margin-top: 30px;
+    animation: animateContainer .9s linear 1;
+}
+
+@keyframes animateContainer {
+    from {
+        transform: 
+        scale(0)
+        rotate(-90deg);
+        height: 60%;
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.header {
+    font-size: 1.2rem;
+    box-shadow: 0 0 8px white;
+    color: #fff;
+    background-color: transparent;
+    padding: 20px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+
+.animatedText {
+    animation: textAnimate 4s ease-in-out infinite;
+}
+
+@keyframes textAnimate {
+    0% {
+       color: green;
+    }
+    10% {
+        color: blue;
+    }
+    20% {
+        color: red;
+    }
+    30% {
+        color: pink;
+    }
+    40% {
+        color:aqua;
+    }
+    50% {
+        color: gold;
+    }
+    60% {
+        color: brown;
+    }
+    70% {
+        color: wheat;
+    }
+    80% {
+        color: bisque;
+    }
+    90% {
+        color: khaki;
+    }
+    100% {
+        color: blueviolet;
+    }
+}
+
+.main-content {
+  width: 100%;
+  height: 80%;
+  margin-top: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 50px 40px;
+  box-shadow: 0 0 8px white;
+  
+}
+
+.main-content .text-area {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #000;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px white;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 100px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 45px;
+    color: #000;
+}
+
+.main-content .person {
+    font-size: 1.8rem;
+    color: rgb(227, 28, 28);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.button-area button {
+    background-color: #262626;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 35px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(7, 189, 202);
+    border: transparent;
+}
+
+.button-area button:active {
+    background-color: rgb(53, 80, 90);
+}
